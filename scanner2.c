@@ -3,6 +3,15 @@
 #include <stdlib.h>
 #include <string.h>
 
+/* ============================================================
+ *  scanner() : analyseur lexical du langage MICRO
+ *
+ *  Règles lexicales :
+ *    ID          ::= LETTER (LETTER | DIGIT | '_')*
+ *    INTLITERAL  ::= DIGIT+
+ *    Mots réservés : BEGIN | END | READ | WRITE
+ * ============================================================ */
+
 typedef enum {
     begin,
     end,
