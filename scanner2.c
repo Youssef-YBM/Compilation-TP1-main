@@ -3,6 +3,13 @@
 #include <stdlib.h>
 #include <string.h>
 
+/* ============================================================
+ *  Règles lexicales :
+ *    ID          ::= LETTER (LETTER | DIGIT | '_')*
+ *    INTLITERAL  ::= DIGIT+
+ *    Mots réservés : BEGIN | END | READ | WRITE
+ * ============================================================ */
+
 typedef enum {
     begin,
     end,
